@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarketSyncs | Plan de Marketing Digital</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#172033;
+    background:#f6f8fc;
+    line-height:1.6;
+  }
+  header{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+    background:linear-gradient(135deg,#111936,#253c9d,#7b3ff2);
+    position:relative;
+    overflow:hidden;
+  }
+  header:before,header:after{
+    content:"";position:absolute;border-radius:50%;opacity:.18;
+    background:white;
+  }
+  header:before{width:350px;height:350px;right:-100px;top:-100px}
+  header:after{width:250px;height:250px;left:-80px;bottom:-70px}
+  .hero{max-width:900px;position:relative;z-index:1}
+  .logo{
+    display:inline-block;font-size:18px;font-weight:800;letter-spacing:3px;
+    border:2px solid rgba(255,255,255,.6);padding:10px 18px;border-radius:30px;
+    margin-bottom:25px;
+  }
+  h1{font-size:clamp(48px,9vw,88px);line-height:1;margin-bottom:18px}
+  .hero h2{font-size:clamp(22px,4vw,34px);font-weight:400;margin-bottom:20px}
+  .hero p{font-size:18px;max-width:700px;margin:auto;color:#e8ebff}
+  .btn{
+    display:inline-block;margin-top:32px;padding:14px 26px;border-radius:30px;
+    background:white;color:#24348e;text-decoration:none;font-weight:700;
+    transition:.2s;
+  }
+  .btn:hover{transform:translateY(-3px)}
+  nav{
+    position:sticky;top:0;z-index:10;background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+  }
+  nav ul{list-style:none;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px}
+  nav a{color:#172033;text-decoration:none;padding:9px 14px;border-radius:20px;font-size:14px;font-weight:700}
+  nav a:hover{background:#eef0ff;color:#5a38d6}
+  main{max-width:1150px;margin:auto;padding:70px 20px}
+  section{margin-bottom:80px}
+  .section-title{text-align:center;margin-bottom:35px}
+  .section-title span{color:#6a42e8;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+  .section-title h2{font-size:clamp(30px,5vw,44px);margin-top:7px}
+  .intro{
+    background:white;border-radius:24px;padding:35px;
+    box-shadow:0 10px 30px rgba(29,38,75,.07);
+  }
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .card{
+    background:white;padding:30px;border-radius:22px;
+    box-shadow:0 10px 28px rgba(29,38,75,.07);
+    border-top:5px solid #6a42e8;
+    transition:.25s;
+  }
+  .card:hover{transform:translateY(-5px)}
+  .number{
+    width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:#eee9ff;color:#5b35d0;font-weight:800;margin-bottom:18px
+  }
+  .card h3{font-size:23px;margin-bottom:12px}
+  .card p{color:#536078}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:25px}
+  .pillar{background:#111936;color:white;border-radius:20px;padding:25px}
+  .pillar h3{margin-bottom:8px;color:#d9d1ff}
+  .value{
+    background:linear-gradient(135deg,#fff,#f0edff);
+    border-radius:28px;padding:40px;
+    border:1px solid #e0dafc;
+  }
+  .value-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+  .value h3{font-size:29px;margin-bottom:12px}
+  .value strong{color:#5d36d4}
+  .benefits{list-style:none;margin-top:20px}
+  .benefits li{padding:12px 0;border-bottom:1px solid #ddd9ef}
+  .benefits li:before{content:"✓";font-weight:bold;color:#6a42e8;margin-right:10px}
+  .badge-box{
+    background:#17244f;color:white;padding:30px;border-radius:22px;text-align:center
+  }
+  .badge-box .big{font-size:52px;font-weight:900;line-height:1;color:#dcd5ff}
+  .cta{
+    text-align:center;background:#111936;color:white;border-radius:28px;padding:50px 25px;
+  }
+  .cta h2{font-size:36px;margin-bottom:12px}
+  .cta p{color:#d9deef;max-width:700px;margin:auto}
+  footer{text-align:center;padding:30px;background:#0b1024;color:#bfc6df}
+  @media(max-width:800px){
+    .grid,.value-grid,.pillars{grid-template-columns:1fr}
+    nav a{font-size:12px;padding:7px 9px}
+    main{padding-top:45px}
+  }
+</style>
+</head>
+<body>
+
+<header id="inicio">
+  <div class="hero">
+    <div class="logo">MARKET SYNCS</div>
+    <h1>MarketSyncs</h1>
+    <h2>Plan de Marketing Digital para el Sistema Moda</h2>
+    <p>Conectamos marcas, clientes y oportunidades mediante estrategias digitales creativas, innovadoras y enfocadas en resultados.</p>
+    <a class="btn" href="#propuesta">Conocer la propuesta ↓</a>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#propuesta">Propuesta</a></li>
+    <li><a href="#cliente">1.1 Cliente</a></li>
+    <li><a href="#necesidad">1.2 Necesidad</a></li>
+    <li><a href="#pertinencia">1.3 Pertinencia</a></li>
+    <li><a href="#valor">1.4 Valor</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="propuesta">
+    <div class="section-title">
+      <span>Agencia de marketing digital</span>
+      <h2>1. Propuesta de Plan de Marketing Digital</h2>
+    </div>
+    <div class="intro">
+      <p><strong>MarketSyncs</strong> es una agencia enfocada en apoyar empresas y emprendimientos del sistema moda para fortalecer su presencia digital. Nuestra propuesta combina creatividad, comunicación, análisis de tendencias y herramientas digitales para acercar las marcas a sus clientes.</p>
+      <div class="pillars">
+        <div class="pillar"><h3>Conectar</h3><p>Crear relaciones reales entre las marcas y sus consumidores.</p></div>
+        <div class="pillar"><h3>Innovar</h3><p>Usar nuevas ideas y recursos digitales para destacar.</p></div>
+        <div class="pillar"><h3>Crecer</h3><p>Convertir la presencia digital en oportunidades de negocio.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cliente">
+    <div class="section-title">
+      <span>1.1</span>
+      <h2>La importancia del cliente en el sistema moda</h2>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="number">01</div>
+        <h3>El cliente es el centro</h3>
+        <p>En la moda, conocer al cliente permite entender sus gustos, necesidades, hábitos de compra y cambios en las tendencias. Esto ayuda a las marcas a crear productos y experiencias más cercanas.</p>
+      </article>
+      <article class="card">
+        <div class="number">02</div>
+        <h3>Decisiones más acertadas</h3>
+        <p>Escuchar y analizar al consumidor facilita tomar mejores decisiones sobre productos, precios, comunicación y canales digitales.</p>
+      </article>
+      <article class="card">
+        <div class="number">03</div>
+        <h3>Fidelización</h3>
+        <p>Una buena experiencia digital puede convertir una compra en una relación duradera entre el cliente y la marca.</p>
+      </article>
+      <article class="card">
+        <div class="number">04</div>
+        <h3>Adaptación a tendencias</h3>
+        <p>Las preferencias cambian rápidamente. Por eso, las marcas necesitan estar atentas a lo que sus consumidores buscan y comentan.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="necesidad">
+    <div class="section-title">
+      <span>1.2</span>
+      <h2>La necesidad que suple MarketSyncs</h2>
+    </div>
+    <div class="intro">
+      <p>Muchas empresas de moda tienen buenos productos, pero necesitan mejorar la manera en que los muestran, promocionan y conectan con sus clientes en internet. <strong>MarketSyncs</strong> responde a esta necesidad mediante una estrategia digital organizada.</p>
+      <div class="grid" style="margin-top:25px">
+        <article class="card">
+          <h3>📱 Presencia digital</h3>
+          <p>Ayudamos a crear y fortalecer la presencia de las marcas en redes sociales y otros canales digitales.</p>
+        </article>
+        <article class="card">
+          <h3>🎯 Estrategias de contenido</h3>
+          <p>Diseñamos contenido atractivo y coherente con la identidad de cada marca y su público objetivo.</p>
+        </article>
+        <article class="card">
+          <h3>📊 Análisis</h3>
+          <p>Proponemos medir resultados para saber qué funciona y qué puede mejorarse.</p>
+        </article>
+        <article class="card">
+          <h3>🤝 Acompañamiento</h3>
+          <p>Ofrecemos orientación para que los emprendimientos puedan aprovechar mejor las herramientas digitales.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pertinencia">
+    <div class="section-title">
+      <span>1.3</span>
+      <h2>Pertinencia con las competencias del programa de formación</h2>
+    </div>
+    <div class="intro">
+      <p>La idea de negocio de <strong>MarketSyncs</strong> se relaciona con competencias necesarias para desarrollar proyectos dentro del sistema moda, porque integra conocimientos de comunicación, marketing, creatividad, diseño, investigación y uso de herramientas digitales.</p>
+      <div class="grid" style="margin-top:25px">
+        <article class="card">
+          <div class="number">A</div>
+          <h3>Marketing y comunicación</h3>
+          <p>Aplicamos estrategias para comunicar productos y servicios de manera clara y atractiva.</p>
+        </article>
+        <article class="card">
+          <div class="number">B</div>
+          <h3>Creatividad</h3>
+          <p>Generamos conceptos y contenidos que permitan diferenciar a las marcas dentro de un mercado competitivo.</p>
+        </article>
+        <article class="card">
+          <div class="number">C</div>
+          <h3>Herramientas digitales</h3>
+          <p>Utilizamos plataformas digitales para crear, publicar, analizar y mejorar las estrategias.</p>
+        </article>
+        <article class="card">
+          <div class="number">D</div>
+          <h3>Emprendimiento</h3>
+          <p>La agencia transforma conocimientos del programa en una propuesta de negocio con posibilidades de crecimiento.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="valor">
+    <div class="section-title">
+      <span>1.4</span>
+      <h2>Propuesta de valor, innovación y ventaja competitiva</h2>
+    </div>
+    <div class="value">
+      <div class="value-grid">
+        <div>
+          <h3>¿Qué hace diferente a <strong>MarketSyncs</strong>?</h3>
+          <p>Ofrecemos a las empresas del sistema moda un acompañamiento digital que combina <strong>creatividad, análisis del cliente, tendencias y estrategias de contenido</strong> para construir una comunicación más efectiva.</p>
+          <ul class="benefits">
+            <li>Propuestas adaptadas a cada marca.</li>
+            <li>Enfoque en las necesidades del consumidor.</li>
+            <li>Contenido creativo para medios digitales.</li>
+            <li>Análisis de resultados para mejorar las estrategias.</li>
+            <li>Integración entre moda, tecnología y marketing.</li>
+          </ul>
+        </div>
+        <div class="badge-box">
+          <div class="big">360°</div>
+          <h3>Visión integral</h3>
+          <p>Conectamos marca, cliente, contenido y estrategia digital en una sola propuesta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>MarketSyncs</h2>
+      <p>“Conectamos marcas con personas, ideas con oportunidades y moda con el mundo digital.”</p>
+      <a class="btn" href="#inicio">Volver al inicio ↑</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 MarketSyncs · Propuesta de Marketing Digital · Sistema Moda</p>
+</footer>
+
+</body>
+</html>
